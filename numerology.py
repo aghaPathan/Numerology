@@ -21,12 +21,17 @@ class Numerology():
     def sum(self, input):
         if len(input) == 1:
             self.num_result += int(input)
-            return self.num_result
+            if len(str(self.num_result)) > 1:
+                return self.sum(str(self.num_result))
+            else:
+                return self.num_result
         elif len(input) == 2:
-            self.temp += int(input[0]) + int(input[1])
+            self.temp = int(input[0]) + int(input[1])
             if len(str(self.temp)) > 1:
-                return  self.sum(str(self.temp))
-            return self.temp
+                return self.sum(str(self.temp))
+            else:
+                self.num_result += self.temp
+                return self.num_result
         else:
             self.num_result += int(input[0]) + int(input[1])
             return self.sum(input[2:])
