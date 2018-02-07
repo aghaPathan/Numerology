@@ -6,6 +6,7 @@ class Numerology():
         self.name_result = int()
         self.num_result = int()
         self.numbers = {1: 'ajs', 2: 'bkt', 3: 'clu', 4: 'dmv', 5: 'enw', 6: 'fox', 7: 'gpy', 8: 'hqz', 9: 'ir'}
+        self.temp = int()
 
     def name(self,input):
         name = input.replace(' ', '').lower()
