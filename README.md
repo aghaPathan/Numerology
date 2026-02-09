@@ -45,3 +45,13 @@ This is for entertainment purposes. Numerology is not a science.
 ## License
 
 MIT
+
+---
+
+## CI Status
+
+All PRs are checked for:
+- ✅ Syntax (Python, JS, TS, YAML, JSON, Dockerfile, Shell)
+- ✅ Secrets (No hardcoded credentials)
+- ✅ Security (High-severity vulnerabilities)
+
